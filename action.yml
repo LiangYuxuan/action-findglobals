@@ -19,3 +19,7 @@ runs:
         echo "$result"
         ! [[ $result ]]
       shell: bash
+
+    - name: Clean up
+      run: rm -rf .lua .install
+      shell: bash
