@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     name: find globals
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Find globals
-        uses: LiangYuxuan/action-findglobals@v1
+        uses: LiangYuxuan/action-findglobals@master
         with:
           find-args: "! -path \"./Libs/*\""
 ```
